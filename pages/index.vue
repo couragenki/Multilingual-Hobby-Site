@@ -4,22 +4,15 @@
       <Logo />
       <h1 class="title">hobby-site</h1>
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+        <div>
+          <n-link to="/1">1へ</n-link>
+        </div>
+        <div>
+          <n-link to="/2">2へ</n-link>
+        </div>
+        <div>
+          <n-link to="/3">3へ</n-link>
+        </div>
       </div>
     </div>
   </div>

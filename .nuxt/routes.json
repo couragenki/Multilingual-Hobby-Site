@@ -3,6 +3,14 @@
     "name": "index",
     "path": "/",
     "component": "/Users/genki.matsubara/Documents/GitHub/Multilingual-Hobby-Site/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_381d9df8"
+  },
+  {
+    "name": "slug",
+    "path": "/:slug",
+    "component": "/Users/genki.matsubara/Documents/GitHub/Multilingual-Hobby-Site/pages/_slug.vue",
+    "chunkName": "pages/_slug",
+    "_name": "_3666fcb0"
   }
 ]
