@@ -1,13 +1,27 @@
 [
   {
-    "name": "index",
+    "name": "index___en",
+    "path": "/en",
+    "component": "/Users/genki.matsubara/Documents/GitHub/Multilingual-Hobby-Site/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_381d9df8"
+  },
+  {
+    "name": "slug___en",
+    "path": "/en/:slug",
+    "component": "/Users/genki.matsubara/Documents/GitHub/Multilingual-Hobby-Site/pages/_slug.vue",
+    "chunkName": "pages/_slug",
+    "_name": "_3666fcb0"
+  },
+  {
+    "name": "index___jp",
     "path": "/",
     "component": "/Users/genki.matsubara/Documents/GitHub/Multilingual-Hobby-Site/pages/index.vue",
     "chunkName": "pages/index",
     "_name": "_381d9df8"
   },
   {
-    "name": "slug",
+    "name": "slug___jp",
     "path": "/:slug",
     "component": "/Users/genki.matsubara/Documents/GitHub/Multilingual-Hobby-Site/pages/_slug.vue",
     "chunkName": "pages/_slug",

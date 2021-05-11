@@ -2,10 +2,16 @@
   <div class="container">
     <div>
       <Logo />
-      <h1 class="title">hobby-site</h1>
-      <div class="links">
+      <h1 class="title">
         <div>
-          <n-link to="/1">1へ</n-link>
+          <span>{{ $t('HELLO_WORLD') }}</span>
+        </div>
+      </h1>
+      <div class="links">
+        <nuxt-link :to="switchLocalePath('en')">English</nuxt-link>
+        <nuxt-link :to="switchLocalePath('jp')">日本語</nuxt-link>
+        <div>
+          <n-link :to="localePath('/1')">1へ</n-link>
         </div>
         <div>
           <n-link to="/2">2へ</n-link>
