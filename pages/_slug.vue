@@ -1,7 +1,5 @@
 <template>
   <article>
-    <n-link to="/">TOPへ</n-link>
-    {{ $i18n.locale }}{{ setLanguage }}
     <h1>{{ post.title }}</h1>
     <dl>
       <dt>date</dt>
@@ -10,6 +8,8 @@
     <div><img :src="post.image" /></div>
     <div v-for="tag in post.tags" :key="tag">{{ tag }}</div>
     <nuxt-content :document="post" />
+    <nuxt-link :to="switchLocalePath('en')">English</nuxt-link>
+    <nuxt-link :to="switchLocalePath('jp')">日本語</nuxt-link>
   </article>
 </template>
 
