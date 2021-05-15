@@ -1,15 +1,24 @@
 {
+  "AllCards": {
+    "description": "Auto imported from components/AllCards.vue"
+  },
   "BlogCard": {
     "description": "Auto imported from components/BlogCard.vue"
-  },
-  "BlogCards": {
-    "description": "Auto imported from components/BlogCards.vue"
   },
   "Footer": {
     "description": "Auto imported from components/Footer.vue"
   },
   "Header": {
     "description": "Auto imported from components/Header.vue"
+  },
+  "Hero": {
+    "description": "Auto imported from components/Hero.vue"
+  },
+  "PostContent": {
+    "description": "Auto imported from components/PostContent.vue"
+  },
+  "PostTemplate": {
+    "description": "Auto imported from components/PostTemplate.vue"
   },
   "SetLang": {
     "description": "Auto imported from components/SetLang.vue"

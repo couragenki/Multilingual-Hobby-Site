@@ -25,7 +25,6 @@ export default {
 .cards-wrapper {
   width: 100%;
   min-height: 400px;
-  background: brown;
   padding: 0;
   list-style: none;
   display: inline-flex;

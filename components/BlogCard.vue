@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article class="blog-crad">
     <n-link :to="localePath(post.path)">
       <div
         class="pic"
@@ -33,7 +33,7 @@ export default {
 }
 </script>
 <style lang="scss">
-article {
+.blog-crad {
   width: 380px;
   margin: 0 10px;
   background: #e7e8ea;
@@ -61,7 +61,7 @@ article {
         list-style: none;
         display: inline-block;
         .tag {
-          background: brown;
+          background: lightgray;
           border-radius: 5px;
           margin-right: 0.3em;
           margin-bottom: 0.3em;
@@ -72,12 +72,12 @@ article {
   }
 }
 @media (max-width: 1200px) {
-  article {
+  .blog-crad {
     width: 300px;
   }
 }
 @media (max-width: 768px) {
-  article {
+  .blog-crad {
     width: 100%;
     margin: 0 0 20px 0;
   }
