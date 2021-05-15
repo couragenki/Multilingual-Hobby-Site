@@ -1,16 +1,12 @@
 <template>
-  <div>
+  <div class="wrapper">
     <h1 class="title">
       <div>
         <span>{{ $t('HELLO_WORLD') }}</span>
       </div>
     </h1>
-    <h2>{{ $t('News') }}</h2>
-    <ul v-for="(item, index) in viewNewsData" :key="index">
-      <li>
-        <n-link :to="localePath(item.path)">{{ item.title }}</n-link>
-      </li>
-    </ul>
+    <h2>{{ $t('Articles') }}</h2>
+    <AllCards :all-posts="viewNewsData" />
   </div>
 </template>
 
@@ -26,3 +22,10 @@ export default {
   },
 }
 </script>
+<style lang="scss">
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+</style>
