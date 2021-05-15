@@ -1,4 +1,7 @@
 {
+  "BlogCard": {
+    "description": "Auto imported from components/BlogCard.vue"
+  },
   "Footer": {
     "description": "Auto imported from components/Footer.vue"
   },
