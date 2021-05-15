@@ -51,7 +51,7 @@ export default {
     ],
     langDir: 'lang/',
     fallbackLocale: ['en'],
-    defaultLocale: 'jp',
+    defaultLocale: 'en',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

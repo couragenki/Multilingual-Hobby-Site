@@ -7,8 +7,6 @@ import scrollBehavior from './router.scrollBehavior.js'
 const _7e1f156c = () => interopDefault(import('../pages/articles/index.vue' /* webpackChunkName: "pages/articles/index" */))
 const _381d9df8 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 const _66abd360 = () => interopDefault(import('../pages/news/index.vue' /* webpackChunkName: "pages/news/index" */))
-const _2896945c = () => interopDefault(import('../pages/articles/en/_slug.vue' /* webpackChunkName: "pages/articles/en/_slug" */))
-const _e07f12f4 = () => interopDefault(import('../pages/news/en/_slug.vue' /* webpackChunkName: "pages/news/en/_slug" */))
 const _818c57fc = () => interopDefault(import('../pages/articles/_slug.vue' /* webpackChunkName: "pages/articles/_slug" */))
 const _64f53218 = () => interopDefault(import('../pages/news/_slug.vue' /* webpackChunkName: "pages/news/_slug" */))
 
@@ -26,59 +24,43 @@ export const routerOptions = {
   routes: [{
     path: "/articles",
     component: _7e1f156c,
-    name: "articles___jp"
+    name: "articles___en"
   }, {
-    path: "/en",
+    path: "/jp",
     component: _381d9df8,
-    name: "index___en"
+    name: "index___jp"
   }, {
     path: "/news",
     component: _66abd360,
-    name: "news___jp"
-  }, {
-    path: "/en/articles",
-    component: _7e1f156c,
-    name: "articles___en"
-  }, {
-    path: "/en/news",
-    component: _66abd360,
     name: "news___en"
   }, {
-    path: "/en/articles/en/:slug?",
-    component: _2896945c,
-    name: "articles-en-slug___en"
+    path: "/jp/articles",
+    component: _7e1f156c,
+    name: "articles___jp"
   }, {
-    path: "/en/news/en/:slug?",
-    component: _e07f12f4,
-    name: "news-en-slug___en"
+    path: "/jp/news",
+    component: _66abd360,
+    name: "news___jp"
   }, {
-    path: "/articles/en/:slug?",
-    component: _2896945c,
-    name: "articles-en-slug___jp"
-  }, {
-    path: "/en/articles/:slug",
-    component: _818c57fc,
-    name: "articles-slug___en"
-  }, {
-    path: "/en/news/:slug",
-    component: _64f53218,
-    name: "news-slug___en"
-  }, {
-    path: "/news/en/:slug?",
-    component: _e07f12f4,
-    name: "news-en-slug___jp"
-  }, {
-    path: "/articles/:slug",
+    path: "/jp/articles/:slug",
     component: _818c57fc,
     name: "articles-slug___jp"
   }, {
-    path: "/news/:slug",
+    path: "/jp/news/:slug",
     component: _64f53218,
     name: "news-slug___jp"
   }, {
+    path: "/articles/:slug",
+    component: _818c57fc,
+    name: "articles-slug___en"
+  }, {
+    path: "/news/:slug",
+    component: _64f53218,
+    name: "news-slug___en"
+  }, {
     path: "/",
     component: _381d9df8,
-    name: "index___jp"
+    name: "index___en"
   }],
 
   fallback: false

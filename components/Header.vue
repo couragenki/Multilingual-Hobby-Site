@@ -1,10 +1,20 @@
 <template>
   <header>
-    <div class="cotent">
+    <div class="wrapper">
       <div class="site-title">
         <n-link to="/"
           ><div>{{ $t('SITE_TITLE') }}</div></n-link
         >
+      </div>
+      <div class="links">
+        <ul>
+          <li>
+            <n-link :to="localePath('/articles')">{{ $t('Articles') }}</n-link>
+          </li>
+          <li>
+            <n-link :to="localePath('/news')">{{ $t('News') }}</n-link>
+          </li>
+        </ul>
       </div>
       <div class="setlang">
         <nuxt-link :to="switchLocalePath('en')">English</nuxt-link>
@@ -19,7 +29,7 @@ header {
   margin: 0 auto;
   height: 100px;
   padding: 10px 0;
-  .cotent {
+  .wrapper {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -31,6 +41,14 @@ header {
         color: black;
         font-weight: 800;
         text-decoration-line: none;
+      }
+    }
+    .links {
+      ul {
+        list-style: none;
+        li {
+          display: inline-block;
+        }
       }
     }
     .setlang {

@@ -1,4 +1,6 @@
 {
   "HELLO_WORLD": "Hello World",
-  "SITE_TITLE": "SITE TITLE"
+  "SITE_TITLE": "SITE TITLE",
+  "Articles": "Articles",
+  "News": "News"
 }

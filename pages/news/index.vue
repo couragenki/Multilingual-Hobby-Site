@@ -5,7 +5,7 @@
         <span>{{ $t('HELLO_WORLD') }}</span>
       </div>
     </h1>
-    <h2>News</h2>
+    <h2>{{ $t('News') }}</h2>
     <ul v-for="(item, index) in viewNewsData" :key="index">
       <n-link :to="localePath(item.path)">
         <li>{{ item.title }}</li>

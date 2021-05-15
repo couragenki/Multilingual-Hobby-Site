@@ -16,12 +16,12 @@
 <script>
 export default {
   async asyncData({ $content, params, i18n }) {
-    if (i18n.locale === 'jp') {
+    if (i18n.locale === 'en') {
       const post = await $content('/articles', params.slug || 'index').fetch()
       return { post }
     } else {
       const post = await $content(
-        '/articles/en',
+        '/articles/jp',
         params.slug || 'index'
       ).fetch()
       return { post }

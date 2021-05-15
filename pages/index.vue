@@ -5,7 +5,7 @@
         <span>{{ $t('HELLO_WORLD') }}</span>
       </div>
     </h1>
-    <h2>Articles</h2>
+    <h2>{{ $t('Articles') }}</h2>
     <div>
       <ul v-for="(item, index) in viewArticlesData" :key="index">
         <div v-if="$i18n.locale === item.language">
@@ -15,7 +15,7 @@
         </div>
       </ul>
     </div>
-    <h2>News</h2>
+    <h2>{{ $t('News') }}</h2>
     <div>
       <ul v-for="(item, index) in viewNewsData" :key="index">
         <div v-if="$i18n.locale === item.language">
