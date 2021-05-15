@@ -1,5 +1,12 @@
 [
   {
+    "name": "articles___jp",
+    "path": "/articles",
+    "component": "/Users/genki.matsubara/Documents/GitHub/Multilingual-Hobby-Site/pages/articles/index.vue",
+    "chunkName": "pages/articles/index",
+    "_name": "_7e1f156c"
+  },
+  {
     "name": "index___en",
     "path": "/en",
     "component": "/Users/genki.matsubara/Documents/GitHub/Multilingual-Hobby-Site/pages/index.vue",
@@ -7,11 +14,81 @@
     "_name": "_381d9df8"
   },
   {
-    "name": "slug___en",
-    "path": "/en/:slug",
-    "component": "/Users/genki.matsubara/Documents/GitHub/Multilingual-Hobby-Site/pages/_slug.vue",
-    "chunkName": "pages/_slug",
-    "_name": "_3666fcb0"
+    "name": "news___jp",
+    "path": "/news",
+    "component": "/Users/genki.matsubara/Documents/GitHub/Multilingual-Hobby-Site/pages/news/index.vue",
+    "chunkName": "pages/news/index",
+    "_name": "_66abd360"
+  },
+  {
+    "name": "articles___en",
+    "path": "/en/articles",
+    "component": "/Users/genki.matsubara/Documents/GitHub/Multilingual-Hobby-Site/pages/articles/index.vue",
+    "chunkName": "pages/articles/index",
+    "_name": "_7e1f156c"
+  },
+  {
+    "name": "news___en",
+    "path": "/en/news",
+    "component": "/Users/genki.matsubara/Documents/GitHub/Multilingual-Hobby-Site/pages/news/index.vue",
+    "chunkName": "pages/news/index",
+    "_name": "_66abd360"
+  },
+  {
+    "name": "articles-en-slug___en",
+    "path": "/en/articles/en/:slug?",
+    "component": "/Users/genki.matsubara/Documents/GitHub/Multilingual-Hobby-Site/pages/articles/en/_slug.vue",
+    "chunkName": "pages/articles/en/_slug",
+    "_name": "_2896945c"
+  },
+  {
+    "name": "news-en-slug___en",
+    "path": "/en/news/en/:slug?",
+    "component": "/Users/genki.matsubara/Documents/GitHub/Multilingual-Hobby-Site/pages/news/en/_slug.vue",
+    "chunkName": "pages/news/en/_slug",
+    "_name": "_e07f12f4"
+  },
+  {
+    "name": "articles-en-slug___jp",
+    "path": "/articles/en/:slug?",
+    "component": "/Users/genki.matsubara/Documents/GitHub/Multilingual-Hobby-Site/pages/articles/en/_slug.vue",
+    "chunkName": "pages/articles/en/_slug",
+    "_name": "_2896945c"
+  },
+  {
+    "name": "articles-slug___en",
+    "path": "/en/articles/:slug",
+    "component": "/Users/genki.matsubara/Documents/GitHub/Multilingual-Hobby-Site/pages/articles/_slug.vue",
+    "chunkName": "pages/articles/_slug",
+    "_name": "_818c57fc"
+  },
+  {
+    "name": "news-slug___en",
+    "path": "/en/news/:slug",
+    "component": "/Users/genki.matsubara/Documents/GitHub/Multilingual-Hobby-Site/pages/news/_slug.vue",
+    "chunkName": "pages/news/_slug",
+    "_name": "_64f53218"
+  },
+  {
+    "name": "news-en-slug___jp",
+    "path": "/news/en/:slug?",
+    "component": "/Users/genki.matsubara/Documents/GitHub/Multilingual-Hobby-Site/pages/news/en/_slug.vue",
+    "chunkName": "pages/news/en/_slug",
+    "_name": "_e07f12f4"
+  },
+  {
+    "name": "articles-slug___jp",
+    "path": "/articles/:slug",
+    "component": "/Users/genki.matsubara/Documents/GitHub/Multilingual-Hobby-Site/pages/articles/_slug.vue",
+    "chunkName": "pages/articles/_slug",
+    "_name": "_818c57fc"
+  },
+  {
+    "name": "news-slug___jp",
+    "path": "/news/:slug",
+    "component": "/Users/genki.matsubara/Documents/GitHub/Multilingual-Hobby-Site/pages/news/_slug.vue",
+    "chunkName": "pages/news/_slug",
+    "_name": "_64f53218"
   },
   {
     "name": "index___jp",
@@ -19,12 +96,5 @@
     "component": "/Users/genki.matsubara/Documents/GitHub/Multilingual-Hobby-Site/pages/index.vue",
     "chunkName": "pages/index",
     "_name": "_381d9df8"
-  },
-  {
-    "name": "slug___jp",
-    "path": "/:slug",
-    "component": "/Users/genki.matsubara/Documents/GitHub/Multilingual-Hobby-Site/pages/_slug.vue",
-    "chunkName": "pages/_slug",
-    "_name": "_3666fcb0"
   }
 ]

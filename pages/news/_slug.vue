@@ -17,10 +17,10 @@
 export default {
   async asyncData({ $content, params, i18n }) {
     if (i18n.locale === 'jp') {
-      const post = await $content('', params.slug || 'index').fetch()
+      const post = await $content('/news', params.slug || 'index').fetch()
       return { post }
     } else {
-      const post = await $content('/en', params.slug || 'index').fetch()
+      const post = await $content('/news/en', params.slug || 'index').fetch()
       return { post }
     }
   },

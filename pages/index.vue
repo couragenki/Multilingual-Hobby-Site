@@ -5,20 +5,45 @@
         <span>{{ $t('HELLO_WORLD') }}</span>
       </div>
     </h1>
-    <div class="links">
-      <div>
-        <n-link :to="localePath('/1')">1へ</n-link>
-      </div>
-      <div>
-        <n-link :to="localePath('/2')">2へ</n-link>
-      </div>
-      <div>
-        <n-link :to="localePath('/3')">3へ</n-link>
-      </div>
+    <h2>Articles</h2>
+    <div>
+      <ul v-for="(item, index) in viewArticlesData" :key="index">
+        <div v-if="$i18n.locale === item.language">
+          <n-link :to="localePath(item.path)">
+            <li>{{ item.title }}</li>
+          </n-link>
+        </div>
+      </ul>
+    </div>
+    <h2>News</h2>
+    <div>
+      <ul v-for="(item, index) in viewNewsData" :key="index">
+        <div v-if="$i18n.locale === item.language">
+          <n-link :to="localePath(item.path)">
+            <li>{{ item.title }}</li>
+          </n-link>
+        </div>
+      </ul>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  async asyncData({ $content }) {
+    const newsQuery = $content('news', { deep: true }).sortBy('date', 'desc')
+    const viewNewsData = await newsQuery.fetch()
+
+    const articleQuery = $content('articles', { deep: true }).sortBy(
+      'date',
+      'desc'
+    )
+    const viewArticlesData = await articleQuery.fetch()
+
+    return {
+      viewNewsData,
+      viewArticlesData,
+    }
+  },
+}
 </script>
