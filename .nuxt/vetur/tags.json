@@ -2,6 +2,9 @@
   "BlogCard": {
     "description": "Auto imported from components/BlogCard.vue"
   },
+  "BlogCards": {
+    "description": "Auto imported from components/BlogCards.vue"
+  },
   "Footer": {
     "description": "Auto imported from components/Footer.vue"
   },
