@@ -7,9 +7,9 @@
     </h1>
     <h2>{{ $t('News') }}</h2>
     <ul v-for="(item, index) in viewNewsData" :key="index">
-      <n-link :to="localePath(item.path)">
-        <li>{{ item.title }}</li>
-      </n-link>
+      <li>
+        <n-link :to="localePath(item.path)">{{ item.title }}</n-link>
+      </li>
     </ul>
   </div>
 </template>

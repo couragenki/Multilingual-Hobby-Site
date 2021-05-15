@@ -16,10 +16,7 @@
           </li>
         </ul>
       </div>
-      <div class="setlang">
-        <nuxt-link :to="switchLocalePath('en')">English</nuxt-link>
-        <nuxt-link :to="switchLocalePath('jp')">日本語</nuxt-link>
-      </div>
+      <SetLang />
     </div>
   </header>
 </template>
@@ -27,8 +24,9 @@
 header {
   width: 100%;
   margin: 0 auto;
-  height: 100px;
+  height: 50px;
   padding: 10px 0;
+  background-color: gray;
   .wrapper {
     width: 100%;
     max-width: 1200px;
@@ -37,7 +35,7 @@ header {
     justify-content: space-between;
     .site-title {
       a {
-        font-size: 1.2em;
+        font-size: 1.8em;
         color: black;
         font-weight: 800;
         text-decoration-line: none;
@@ -47,14 +45,16 @@ header {
       ul {
         list-style: none;
         li {
+          padding: 0 3px;
           display: inline-block;
+          a {
+            color: white;
+            text-decoration: none;
+          }
+          a:hover {
+            text-decoration: underline red 0.3em;
+          }
         }
-      }
-    }
-    .setlang {
-      a {
-        color: blue;
-        text-decoration-line: none;
       }
     }
   }

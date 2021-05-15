@@ -4,5 +4,8 @@
   },
   "Header": {
     "description": "Auto imported from components/Header.vue"
+  },
+  "SetLang": {
+    "description": "Auto imported from components/SetLang.vue"
   }
 }

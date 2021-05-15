@@ -6,10 +6,7 @@
           ><div>{{ $t('SITE_TITLE') }}</div></n-link
         >
       </div>
-      <div class="setlang">
-        <nuxt-link :to="switchLocalePath('en')">English</nuxt-link>
-        <nuxt-link :to="switchLocalePath('jp')">日本語</nuxt-link>
-      </div>
+      <SetLang />
     </div>
   </footer>
 </template>
@@ -27,15 +24,9 @@ footer {
     justify-content: space-between;
     .site-title {
       a {
-        font-size: 1.2em;
+        font-size: 1.5em;
         color: white;
         font-weight: 800;
-        text-decoration-line: none;
-      }
-    }
-    .setlang {
-      a {
-        color: blue;
         text-decoration-line: none;
       }
     }

@@ -9,9 +9,9 @@
     <div>
       <ul v-for="(item, index) in viewArticlesData" :key="index">
         <div v-if="$i18n.locale === item.language">
-          <n-link :to="localePath(item.path)">
-            <li>{{ item.title }}</li>
-          </n-link>
+          <li>
+            <n-link :to="localePath(item.path)">{{ item.title }}</n-link>
+          </li>
         </div>
       </ul>
     </div>
@@ -19,9 +19,9 @@
     <div>
       <ul v-for="(item, index) in viewNewsData" :key="index">
         <div v-if="$i18n.locale === item.language">
-          <n-link :to="localePath(item.path)">
-            <li>{{ item.title }}</li>
-          </n-link>
+          <li>
+            <n-link :to="localePath(item.path)">{{ item.title }}</n-link>
+          </li>
         </div>
       </ul>
     </div>
