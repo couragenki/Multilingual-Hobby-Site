@@ -11,6 +11,7 @@ You can directly use them in pages and other components without the need to impo
 - `<Footer>` | `<footer>` (components/Footer.vue)
 - `<Header>` | `<header>` (components/Header.vue)
 - `<Hero>` | `<hero>` (components/Hero.vue)
+- `<Link>` | `<link>` (components/Link.vue)
 - `<PostContent>` | `<post-content>` (components/PostContent.vue)
 - `<PostTemplate>` | `<post-template>` (components/PostTemplate.vue)
 - `<SetLang>` | `<set-lang>` (components/SetLang.vue)
