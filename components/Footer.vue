@@ -2,8 +2,8 @@
   <footer>
     <div class="cotent">
       <div class="site-title">
-        <n-link to="/"
-          ><div>{{ $t('SITE_TITLE') }}</div></n-link
+        <Link :path="'/'"
+          ><div>{{ $t('SITE_TITLE') }}</div></Link
         >
       </div>
       <SetLang />

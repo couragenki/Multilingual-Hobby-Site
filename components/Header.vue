@@ -2,17 +2,17 @@
   <header>
     <div class="wrapper">
       <div class="site-title">
-        <n-link to="/"
-          ><div>{{ $t('SITE_TITLE') }}</div></n-link
+        <Link :path="'/'"
+          ><div>{{ $t('SITE_TITLE') }}</div></Link
         >
       </div>
       <div class="links">
         <ul>
           <li>
-            <n-link :to="localePath('/articles')">{{ $t('Articles') }}</n-link>
+            <Link :path="'/articles'">{{ $t('Articles') }}</Link>
           </li>
           <li>
-            <n-link :to="localePath('/news')">{{ $t('News') }}</n-link>
+            <Link :path="'/news'">{{ $t('News') }}</Link>
           </li>
         </ul>
       </div>

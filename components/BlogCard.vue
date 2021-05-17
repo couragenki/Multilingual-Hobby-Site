@@ -1,6 +1,6 @@
 <template>
   <article class="blog-crad">
-    <n-link :to="localePath(setPath)">
+    <Link :path="post.path">
       <div
         class="pic"
         :style="{ backgroundImage: 'url(' + post.image + ')' }"
@@ -15,11 +15,13 @@
           </li>
         </ul>
       </div>
-    </n-link>
+    </Link>
   </article>
 </template>
 <script>
+import Link from '~/components/Link.vue'
 export default {
+  components: { Link },
   props: {
     post: {
       type: Object,
