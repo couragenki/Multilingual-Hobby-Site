@@ -1,20 +1,11 @@
 <template>
-  <article>
-    <h1>{{ post.title }}</h1>
-    <dl>
-      <dt>date</dt>
-      <dd>{{ post.date }}</dd>
-    </dl>
-    <div><img :src="post.image" /></div>
-    <div v-for="tag in post.tags" :key="tag">{{ tag }}</div>
-    <nuxt-content :document="post" />
-    <nuxt-link :to="switchLocalePath('en')">English</nuxt-link>
-    <nuxt-link :to="switchLocalePath('jp')">日本語</nuxt-link>
-  </article>
+  <PostTemplate :post-data="post" />
 </template>
 
 <script>
+import PostTemplate from '~/components/PostTemplate.vue'
 export default {
+  components: { PostTemplate },
   async asyncData({ $content, params, i18n }) {
     if (i18n.locale === 'en') {
       const post = await $content('/news', params.slug || 'index').fetch()

@@ -13,7 +13,7 @@
 <script>
 export default {
   async asyncData({ $content }) {
-    const newsQuery = $content('news').sortBy('date', 'desc')
+    const newsQuery = $content('news', { deep: true }).sortBy('date', 'desc')
     const newsData = await newsQuery.fetch()
     const viewNewsData = newsData.sort(function (a, b) {
       return new Date(b.date) - new Date(a.date)
