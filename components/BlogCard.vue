@@ -1,14 +1,12 @@
 <template>
   <article class="blog-crad">
-    <n-link :to="localePath(post.path)">
+    <n-link :to="localePath(setPath)">
       <div
         class="pic"
         :style="{ backgroundImage: 'url(' + post.image + ')' }"
       ></div>
       <div class="article-info">
-        <h4>
-          {{ post.title }}
-        </h4>
+        <h4>{{ post.title }}</h4>
         <time :datetime="post.date">{{ post.date }}</time
         ><br />
         <ul v-for="tag in post.tags" :key="tag" class="tags">
@@ -28,6 +26,11 @@ export default {
       default: () => {
         return {}
       },
+    },
+  },
+  computed: {
+    setPath() {
+      return this.post.path.replace('/jp', '')
     },
   },
 }
