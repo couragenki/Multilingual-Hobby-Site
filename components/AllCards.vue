@@ -30,8 +30,8 @@ export default {
     justify-content: normal;
     flex-wrap: wrap;
     .blog-crad {
-      width: 31%;
-      margin: 0 1% 2rem;
+      width: 48%;
+      margin: 0 2% 2rem 0;
     }
   }
 }

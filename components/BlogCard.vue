@@ -39,7 +39,6 @@ export default {
 </script>
 <style lang="scss">
 .blog-crad {
-  width: 380px;
   margin: 0 10px;
   background: #e7e8ea;
   border-radius: 10px;
