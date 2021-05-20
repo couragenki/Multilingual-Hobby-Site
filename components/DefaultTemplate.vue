@@ -38,4 +38,17 @@ export default {
     width: 300px;
   }
 }
+@media (max-width: 768px) {
+  .default-layout {
+    .layout-container {
+      display: block;
+      .layout-main {
+        width: 100%;
+      }
+    }
+    .sidebar {
+      width: 100%;
+    }
+  }
+}
 </style>

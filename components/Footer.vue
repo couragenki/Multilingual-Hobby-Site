@@ -7,6 +7,7 @@
         >
       </div>
       <SetLang />
+      <p class="copywrite">コピーライト</p>
     </div>
   </footer>
 </template>
@@ -29,6 +30,9 @@ footer {
         font-weight: 800;
         text-decoration-line: none;
       }
+    }
+    .copywrite {
+      color: white;
     }
   }
 }

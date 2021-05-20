@@ -73,4 +73,14 @@ export default {
   top: 0;
   z-index: 0;
 }
+@media (max-width: 768px) {
+  .hero {
+    height: 385px;
+    .page-title {
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+  }
+}
 </style>

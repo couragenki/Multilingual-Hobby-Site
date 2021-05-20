@@ -37,11 +37,10 @@ export default {
 }
 @media (max-width: 1200px) {
   .cards-wrapper {
-    width: 100%;
     .cards {
       .blog-crad {
-        width: 31%;
-        margin: 0 8px 2rem;
+        width: 48%;
+        margin: 0 1% 2rem 1%;
       }
     }
   }
