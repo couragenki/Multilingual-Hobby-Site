@@ -1,5 +1,5 @@
 <template>
-  <article class="blog-crad">
+  <article v-if="$i18n.locale === post.language" class="blog-crad">
     <Link :path="post.path">
       <div
         class="pic"

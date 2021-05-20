@@ -1,11 +1,7 @@
 <template>
   <div class="cards-wrapper">
-    <div v-for="(item, index) in allPosts" :key="index">
-      <BlogCard
-        v-if="$i18n.locale === item.language"
-        class="card"
-        :post="item"
-      />
+    <div class="cards">
+      <BlogCard v-for="(item, index) in allPosts" :key="index" :post="item" />
     </div>
   </div>
 </template>
@@ -23,25 +19,41 @@ export default {
 </script>
 <style lang="scss">
 .cards-wrapper {
-  width: 100%;
-  min-height: 400px;
-  padding: 0;
-  list-style: none;
-  display: inline-flex;
-  justify-content: normal;
-  flex-wrap: wrap;
+  .cards {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 400px;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    display: inline-flex;
+    justify-content: normal;
+    flex-wrap: wrap;
+    .blog-crad {
+      width: 31%;
+      margin: 0 1% 2rem;
+    }
+  }
 }
 @media (max-width: 1200px) {
-  .wrapper {
-    .cards-wrapper {
-      width: 100%;
+  .cards-wrapper {
+    width: 100%;
+    .cards {
+      .blog-crad {
+        width: 31%;
+        margin: 0 8px 2rem;
+      }
     }
   }
 }
 @media (max-width: 768px) {
-  .wrapper {
-    .cards-wrapper {
-      display: block;
+  .cards-wrapper {
+    display: block;
+    .cards {
+      .blog-crad {
+        width: 100%;
+        margin: 1rem 8px;
+      }
     }
   }
 }

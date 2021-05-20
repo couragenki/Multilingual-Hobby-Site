@@ -26,7 +26,7 @@ header {
   margin: 0 auto;
   height: 50px;
   padding: 10px 0;
-  background-color: gray;
+  background-color: black;
   .wrapper {
     width: 100%;
     max-width: 1200px;
@@ -36,7 +36,7 @@ header {
     .site-title {
       a {
         font-size: 1.8em;
-        color: black;
+        color: white;
         font-weight: 800;
         text-decoration-line: none;
       }
