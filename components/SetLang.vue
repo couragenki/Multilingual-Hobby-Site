@@ -1,6 +1,11 @@
 <template>
   <div class="setlang">
     <nuxt-link
+      :class="{ selected: $i18n.locale === 'cn' }"
+      :to="switchLocalePath('cn')"
+      >中国語</nuxt-link
+    >
+    <nuxt-link
       :class="{ selected: $i18n.locale === 'en' }"
       :to="switchLocalePath('en')"
       >English</nuxt-link

@@ -6,7 +6,7 @@ export default {
   head: {
     title: 'hobby-site',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'jp',
     },
     meta: [
       { charset: 'utf-8' },
@@ -48,10 +48,15 @@ export default {
         iso: 'en',
         file: 'en.json',
       },
+      {
+        code: 'cn',
+        iso: 'cn',
+        file: 'cn.json',
+      },
     ],
     langDir: 'lang/',
-    fallbackLocale: ['en'],
-    defaultLocale: 'en',
+    fallbackLocale: ['jp'],
+    defaultLocale: 'jp',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

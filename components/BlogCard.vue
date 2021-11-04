@@ -1,6 +1,7 @@
 <template>
   <article v-if="$i18n.locale === post.language" class="blog-crad">
-    <Link :path="post.path">
+    <Link :path="setPath">
+      {{ check() }}
       <div
         class="pic"
         :style="{ backgroundImage: 'url(' + post.image + ')' }"
@@ -32,7 +33,18 @@ export default {
   },
   computed: {
     setPath() {
-      return this.post.path.replace('/jp', '')
+      if (this.post.language === 'en') {
+        return this.post.path.replace('/en', '')
+      }
+      if (this.post.language === 'cn') {
+        return this.post.path.replace('/cn', '')
+      }
+      return this.post.path
+    },
+  },
+  methods: {
+    check() {
+      console.log(this.post)
     },
   },
 }

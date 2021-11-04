@@ -8,8 +8,6 @@
       </h1>
       <h2>{{ $t('Articles') }}</h2>
       <AllCards :all-posts="viewArticlesData" />
-      <h2>{{ $t('News') }}</h2>
-      <AllCards :all-posts="viewNewsData" />
     </div>
   </DefaultTemplate>
 </template>
@@ -19,9 +17,6 @@ import AllCards from '~/components/AllCards.vue'
 export default {
   components: { AllCards },
   async asyncData({ $content }) {
-    const newsQuery = $content('news', { deep: true }).sortBy('date', 'desc')
-    const viewNewsData = await newsQuery.fetch()
-
     const articleQuery = $content('articles', { deep: true }).sortBy(
       'date',
       'desc'
@@ -29,7 +24,6 @@ export default {
     const viewArticlesData = await articleQuery.fetch()
 
     return {
-      viewNewsData,
       viewArticlesData,
     }
   },

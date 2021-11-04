@@ -14,9 +14,6 @@
       <li>
         <Link :path="'/articles'">{{ $t('Articles') }}</Link>
       </li>
-      <li>
-        <Link :path="'/news'">{{ $t('News') }}</Link>
-      </li>
     </ul>
   </div>
 </template>

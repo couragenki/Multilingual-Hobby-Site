@@ -6,7 +6,9 @@
   </div>
 </template>
 <script>
+import BlogCard from '~/components/BlogCard.vue'
 export default {
+  components: { BlogCard },
   props: {
     allPosts: {
       type: Array,
