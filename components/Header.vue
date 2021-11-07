@@ -1,57 +1,81 @@
 <template>
   <header>
-    <div class="wrapper">
+    <div class="site-title-wrapper">
       <div class="site-title">
         <Link :path="'/'"
           ><div>{{ $t('SITE_TITLE') }}</div></Link
         >
+        <div class="setlang">
+          <SetLang />
+        </div>
       </div>
+    </div>
+    <div class="links-wrapper">
       <div class="links">
         <ul>
           <li>
             <Link :path="'/articles'">{{ $t('Articles') }}</Link>
           </li>
+          <li>
+            <Link :path="'/'">{{ $t('Links') }}</Link>
+          </li>
+          <li>
+            <Link :path="'/'">{{ $t('Links') }}</Link>
+          </li>
+          <li>
+            <Link :path="'/'">{{ $t('Links') }}</Link>
+          </li>
+          <li>
+            <Link :path="'/'">{{ $t('Links') }}</Link>
+          </li>
         </ul>
       </div>
-      <SetLang />
     </div>
   </header>
 </template>
-<style lang="scss">
+<style scoped lang="scss">
 header {
   width: 100%;
   margin: 0 auto;
-  height: 50px;
-  padding: 10px 0;
-  background-color: black;
-  .wrapper {
+  padding: 10px 0 30px;
+  .site-title-wrapper,
+  .links-wrapper {
+    width: 100%;
+    border-bottom: 1px solid rgb(197, 197, 197);
+  }
+  .site-title,
+  .links {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    .site-title {
+    text-align: center;
+    position: relative;
+  }
+  .site-title a {
+    font-size: 1.8em;
+    color: black;
+    font-weight: 800;
+    text-decoration-line: none;
+  }
+  .site-title .setlang {
+    width: 50%;
+    position: absolute;
+    top: 0%;
+    right: 0;
+  }
+  .links ul {
+    list-style: none;
+    li {
+      padding: 0 3px;
+      display: inline-block;
       a {
-        font-size: 1.8em;
-        color: white;
-        font-weight: 800;
-        text-decoration-line: none;
+        font-size: 1.3em;
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
       }
-    }
-    .links {
-      ul {
-        list-style: none;
-        li {
-          padding: 0 3px;
-          display: inline-block;
-          a {
-            color: white;
-            text-decoration: none;
-          }
-          a:hover {
-            text-decoration: underline red 0.3em;
-          }
-        }
+      a:hover {
+        text-decoration: underline red 0.3em;
       }
     }
   }

@@ -27,9 +27,9 @@ export default {
 .default-layout {
   .layout-container {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
     display: flex;
+    max-width: 1200px;
     .layout-main {
       width: 900px;
     }

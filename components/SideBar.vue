@@ -1,14 +1,13 @@
 <template>
   <div class="sidebar">
-    <SetLang />
     <h4>Profile</h4>
     著者プロフィール
     <h4>人気の記事</h4>
-    <p>おすすめ記事1</p>
-    <p>おすすめ記事2</p>
-    <p>おすすめ記事3</p>
-    <p>おすすめ記事4</p>
-    <p>おすすめ記事5</p>
+    <p>text1</p>
+    <p>text2</p>
+    <p>text3</p>
+    <p>text4</p>
+    <p>text5</p>
     <h4>Links</h4>
     <ul>
       <li>
@@ -21,7 +20,6 @@
 .sidebar {
   width: auto;
   min-height: 500px;
-  background: gray;
   ul {
     list-style: none;
   }
