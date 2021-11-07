@@ -5,7 +5,7 @@
       <div class="layout-main">
         <slot />
       </div>
-      <SideBar class="sidebar" />
+      <SideBar />
     </div>
     <Footer />
   </div>
@@ -33,9 +33,6 @@ export default {
     .layout-main {
       width: 900px;
     }
-  }
-  .sidebar {
-    width: 300px;
   }
 }
 @media (max-width: 768px) {

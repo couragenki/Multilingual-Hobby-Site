@@ -21,7 +21,18 @@ export default {
   max-width: 1200px;
   min-height: 400px;
   margin: 0 auto;
-  padding-top: 60px;
   padding-bottom: 60px;
+  h2 {
+    width: 100%;
+    padding-bottom: 7px;
+    margin-top: 60px;
+    border-bottom: 6px solid #dcd7c8;
+  }
+  h3,
+  h4 {
+    width: 100%;
+    padding-bottom: 7px;
+    margin-top: 30px;
+  }
 }
 </style>

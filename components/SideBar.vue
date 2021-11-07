@@ -1,7 +1,5 @@
 <template>
   <div class="sidebar">
-    <h4>Profile</h4>
-    著者プロフィール
     <h4>人気の記事</h4>
     <p>text1</p>
     <p>text2</p>
@@ -18,8 +16,8 @@
 </template>
 <style lang="scss">
 .sidebar {
-  width: auto;
-  min-height: 500px;
+  width: 240px;
+  margin: 0 auto;
   ul {
     list-style: none;
   }
