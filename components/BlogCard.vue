@@ -10,8 +10,6 @@
       </div>
       <div class="article-info">
         <h4>{{ post.title }}</h4>
-        <time :datetime="post.date">{{ post.date }}</time
-        ><br />
         <ul v-for="tag in post.tags" :key="tag" class="tags">
           <li class="tag">
             {{ tag }}
