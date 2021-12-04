@@ -3,24 +3,22 @@
     <div class="wrapper">
       <h1 class="title">
         <div>
-          <span>{{ $t('HELLO_WORLD') }}</span>
+          <span>{{ $t('FOODS') }}</span>
         </div>
       </h1>
-
-      <h2 class="title">
-        <span>{{ $t('FOODS') }}</span>
-      </h2>
+      <h2>{{ $t('Articles') }}</h2>
       <AllCards :all-posts="viewArticlesData" />
     </div>
   </DefaultTemplate>
 </template>
+
 <script>
 import DefaultTemplate from '~/components/DefaultTemplate.vue'
 import AllCards from '~/components/AllCards.vue'
 export default {
   components: {
-    AllCards,
     DefaultTemplate,
+    AllCards,
   },
   async asyncData({ $content }) {
     const articlesQuery = $content('foods/articles', { deep: true }).sortBy(
@@ -35,3 +33,10 @@ export default {
   },
 }
 </script>
+<style lang="scss">
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+</style>

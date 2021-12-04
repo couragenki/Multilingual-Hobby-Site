@@ -49,11 +49,10 @@ export default {
 }
 @media (max-width: 768px) {
   .cards-wrapper {
-    display: block;
     .cards {
       .blog-crad {
-        width: 100%;
-        margin: 1rem 8px;
+        width: 46%;
+        margin: 40px 2%;
       }
     }
   }

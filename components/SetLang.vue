@@ -19,6 +19,7 @@
 </template>
 <style lang="scss">
 .setlang {
+  z-index: 10;
   a {
     color: black;
     text-decoration: none;
@@ -30,6 +31,13 @@
   .selected {
     color: red;
     text-decoration: underline red 0.3em;
+  }
+}
+@media (max-width: 768px) {
+  .setlang {
+    a {
+      display: block;
+    }
   }
 }
 </style>

@@ -3,7 +3,7 @@
     <div class="site-title-wrapper">
       <div class="site-title">
         <Link :path="'/'"
-          ><div>{{ $t('SITE_TITLE') }}</div></Link
+          ><span>{{ $t('SITE_TITLE') }}</span></Link
         >
         <div class="setlang">
           <SetLang />
@@ -14,25 +14,30 @@
       <div class="links">
         <ul>
           <li>
-            <Link :path="'/articles'">{{ $t('Articles') }}</Link>
+            <Link :path="'/foods'">
+              <span>{{ $t('FOODS') }}</span>
+            </Link>
           </li>
           <li>
-            <Link :path="'/'">{{ $t('Links') }}</Link>
-          </li>
-          <li>
-            <Link :path="'/'">{{ $t('Links') }}</Link>
-          </li>
-          <li>
-            <Link :path="'/'">{{ $t('Links') }}</Link>
-          </li>
-          <li>
-            <Link :path="'/'">{{ $t('Links') }}</Link>
+            <Link :path="'/foods/tags'">
+              <span>{{ $t('FOODS') }}タグ一覧</span>
+            </Link>
           </li>
         </ul>
       </div>
     </div>
   </header>
 </template>
+<script>
+import Link from '~/components/Link.vue'
+import SetLang from '~/components/SetLang.vue'
+export default {
+  components: {
+    Link,
+    SetLang,
+  },
+}
+</script>
 <style scoped lang="scss">
 header {
   width: 100%;

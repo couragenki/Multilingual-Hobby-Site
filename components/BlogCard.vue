@@ -1,11 +1,13 @@
 <template>
   <article v-if="$i18n.locale === post.language" class="blog-crad">
     <Link :path="setPath">
-      {{ check() }}
-      <div
-        class="pic"
-        :style="{ backgroundImage: 'url(' + post.image + ')' }"
-      ></div>
+      <div class="image">
+        <div
+          class="pic"
+          :style="{ backgroundImage: 'url(' + post.image + ')' }"
+        ></div>
+        <div class="shadow"></div>
+      </div>
       <div class="article-info">
         <h4>{{ post.title }}</h4>
         <time :datetime="post.date">{{ post.date }}</time
@@ -42,30 +44,37 @@ export default {
       return this.post.path
     },
   },
-  methods: {
-    check() {
-      console.log(this.post)
-    },
-  },
 }
 </script>
 <style lang="scss">
 .blog-crad {
-  margin: 0 10px;
-  background: #e7e8ea;
-  border-radius: 10px;
+  margin: 0 20px;
   margin-top: 4%;
   a {
     color: black;
     text-decoration: none;
-    .pic {
-      height: 241px;
-      background-size: cover;
-      background-position: 50%;
-      border-radius: 10px 10px 0 0;
+    .image {
+      width: 100%;
+      position: relative;
+      .pic {
+        width: 95%;
+        height: 241px;
+        background-size: cover;
+        background-position: 50%;
+      }
+      .shadow {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 100%;
+        width: 95%;
+        height: 241px;
+        background: #ececec;
+        z-index: -1;
+      }
     }
     .article-info {
-      padding: 20px;
+      padding: 20px 0;
       h4 {
         font-size: 1.2em;
         font-weight: 800;
@@ -78,7 +87,6 @@ export default {
         display: inline-block;
         .tag {
           background: lightgray;
-          border-radius: 5px;
           margin-right: 0.3em;
           margin-bottom: 0.3em;
           padding: 0.1em 0.3em;
@@ -94,7 +102,7 @@ export default {
 }
 @media (max-width: 768px) {
   .blog-crad {
-    width: 100%;
+    width: 50%;
     margin: 0 0 20px 0;
   }
 }

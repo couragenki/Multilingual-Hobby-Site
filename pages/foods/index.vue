@@ -2,20 +2,21 @@
   <DefaultTemplate>
     <div class="wrapper">
       <h1 class="title">
-        <div>
-          <span>{{ $t('HELLO_WORLD') }}</span>
-        </div>
+        <span>{{ $t('FOODS') }}</span>
       </h1>
-      <h2>{{ $t('Articles') }}</h2>
       <AllCards :all-posts="viewArticlesData" />
     </div>
   </DefaultTemplate>
 </template>
 
 <script>
+import AllCards from '~/components/AllCards.vue'
 export default {
+  components: {
+    AllCards,
+  },
   async asyncData({ $content }) {
-    const articlesQuery = $content('articles', { deep: true }).sortBy(
+    const articlesQuery = $content('foods/articles', { deep: true }).sortBy(
       'date',
       'desc'
     )
@@ -32,5 +33,8 @@ export default {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+}
+.title {
+  text-align: center;
 }
 </style>

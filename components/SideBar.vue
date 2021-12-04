@@ -1,19 +1,28 @@
 <template>
   <div class="sidebar">
-    <h4>人気の記事</h4>
-    <p>text1</p>
-    <p>text2</p>
-    <p>text3</p>
-    <p>text4</p>
-    <p>text5</p>
     <h4>Links</h4>
     <ul>
       <li>
-        <Link :path="'/articles'">{{ $t('Articles') }}</Link>
+        <Link :path="'/foods'">
+          <span>{{ $t('FOODS') }}</span>
+        </Link>
+      </li>
+      <li>
+        <Link :path="'/foods/tags'">
+          <span>Tags</span>
+        </Link>
       </li>
     </ul>
   </div>
 </template>
+
+<script>
+import Link from '~/components/Link.vue'
+export default {
+  components: { Link },
+}
+</script>
+
 <style lang="scss">
 .sidebar {
   width: 240px;

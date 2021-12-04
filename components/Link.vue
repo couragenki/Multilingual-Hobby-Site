@@ -20,3 +20,8 @@ export default {
   },
 }
 </script>
+<style scoped lang="scss">
+a:hover {
+  cursor: pointer;
+}
+</style>

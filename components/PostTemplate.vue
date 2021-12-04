@@ -20,8 +20,11 @@
 
 <script>
 import PostContent from '~/components/PostContent.vue'
+import Header from '~/components/Header.vue'
+import SideBar from '~/components/SideBar.vue'
+import Footer from '~/components/Footer.vue'
 export default {
-  components: { PostContent },
+  components: { PostContent, Header, SideBar, Footer },
   props: {
     postData: {
       type: Object,
@@ -64,6 +67,8 @@ export default {
 @media (max-width: 768px) {
   .layout-container {
     display: block;
+    width: auto;
+    padding: 0 10px;
     .layout-main {
       width: 100%;
     }
