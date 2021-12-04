@@ -6,6 +6,7 @@
           <span>{{ $t('HELLO_WORLD') }}</span>
         </div>
       </h1>
+      <p class="intoro">{{ $t('INTORO') }}</p>
 
       <h2 class="title">
         <span>{{ $t('FOODS') }}</span>
@@ -35,3 +36,12 @@ export default {
   },
 }
 </script>
+<style scoped>
+.title {
+  text-align: left;
+}
+.intoro {
+  padding: 30px 0 50px;
+  text-align: left;
+}
+</style>

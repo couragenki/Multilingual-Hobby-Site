@@ -10,22 +10,6 @@
         </div>
       </div>
     </div>
-    <div class="links-wrapper">
-      <div class="links">
-        <ul>
-          <li>
-            <Link :path="'/foods'">
-              <span>{{ $t('FOODS') }}</span>
-            </Link>
-          </li>
-          <li>
-            <Link :path="'/foods/tags'">
-              <span>{{ $t('FOODS') }}タグ一覧</span>
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </div>
   </header>
 </template>
 <script>
