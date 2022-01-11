@@ -1,10 +1,12 @@
-export default {
+import { defineNuxtConfig } from '@nuxt/bridge'
+
+export default defineNuxtConfig({
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'hobby-site',
+    title: 'multilingual site demo',
     htmlAttrs: {
       lang: 'jp',
     },
@@ -34,7 +36,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxt/content', 'nuxt-i18n'],
+  modules: ['nuxt-i18n'],
 
   i18n: {
     locales: [
@@ -61,4 +63,8 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
-}
+
+  scripts: {
+    build: 'nuxi generate',
+  },
+})
